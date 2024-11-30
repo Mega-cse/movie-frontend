@@ -1,0 +1,24 @@
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer-content p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .social-icons a {
+    color: white;
+    font-size: 2rem;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: #1e90ff; /* Change color on hover */
+  }
+  

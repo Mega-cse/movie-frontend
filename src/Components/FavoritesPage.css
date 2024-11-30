@@ -1,0 +1,65 @@
+.favorites-container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .movie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Create a flexible grid */
+    gap: 20px; /* Add space between cards */
+    margin-top: 20px;
+  }
+  
+  .movie-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .movie-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .movie-poster {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .movie-card h3 {
+    margin: 10px 0;
+    font-size: 18px;
+  }
+  
+  button {
+    background-color: #ff6347; /* Tomato color for the button */
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background-color: #e55347;
+  }
+  
+  @media (max-width: 768px) {
+    .movie-grid {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Adjust columns for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .movie-grid {
+      grid-template-columns: 1fr; /* Single column layout for very small screens */
+    }
+  }
+  
